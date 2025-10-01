@@ -3,6 +3,10 @@
 This repository contains a Streamlit app that demonstrates a CRISP-DM workflow for a simple linear regression problem.
 
 Structure:
-- `lr_crispdm_streamlit/` — the Streamlit app, helpers, tests, and deployment config
+When creating the app on Streamlit Cloud, set the main file path to:
 
-To push this project to GitHub and deploy to Streamlit Cloud, follow the PowerShell commands in the `lr_crispdm_streamlit/README.md` file.
+- `hw1/app.py`
+
+Behavior change: auto-run on parameter change
+-------------------------------------------
+The app was updated to auto-run the full CRISP-DM flow whenever a parameter changes (no need to press a Run button). If you prefer a manual Run button instead, let me know and I can revert to the previous behavior.

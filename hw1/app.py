@@ -33,9 +33,8 @@ seed = st.sidebar.number_input("Random seed", value=int(default_params['seed']),
 st.sidebar.subheader("Modeling")
 test_ratio = st.sidebar.slider("Test set ratio", 0.0, 0.9, 0.2, 0.05)
 fit_intercept = st.sidebar.checkbox("Fit intercept", value=True)
-run_button = st.sidebar.button("Run CRISP-DM flow")
+# Manual Run button removed. The app now auto-runs the full flow whenever parameters change.
 auto_preview = st.sidebar.checkbox("Auto-update preview", value=True)
-auto_run = st.sidebar.checkbox("Auto-run full flow", value=False)
 
 st.title("CRISP-DM: Simple Linear Regression (ax + b)")
 
@@ -81,8 +80,8 @@ if auto_preview:
         st.sidebar.pyplot(figp)
 
 with col_main:
-    # run when user presses button, or when auto_run is enabled (Streamlit reruns script on widget change)
-    if run_button or auto_run:
+    # Auto-run full flow whenever parameters change (no manual Run button)
+    if True:
         # Business Understanding
         st.markdown("### 1) Business Understanding")
         st.write(user_prompt)
@@ -144,8 +143,7 @@ with col_main:
             st.write("6) Artifacts prepared for download (CSV, pickle)")
 
         st.success("CRISP-DM flow completed")
-    else:
-        st.info("Use the sidebar controls and click 'Run CRISP-DM flow' to start")
+    # (manual Run info removed; flow auto-executes on parameter change)
 
 with col_sidebar:
     st.markdown("### Quick tips")
