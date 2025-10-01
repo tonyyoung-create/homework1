@@ -1,3 +1,15 @@
+Interactive features (new)
+--------------------------
+ - Auto-update preview: a live preview plot in the sidebar updates automatically when you change parameters (a, b, noise, n_points, seed). This preview uses a smaller sample for speed and shows the true line and a fitted line.
+- Auto-run full flow: an optional toggle in the sidebar that (when enabled) will automatically execute the full CRISP-DM flow whenever parameters change. The Run button still exists for manual control.
+
+Streamlit main file path for deployment
+--------------------------------------
+When creating the app on Streamlit Cloud, set the main file path to:
+
+- `hw1/lr_crispdm_streamlit/app.py`
+If you prefer the repository root to contain the app directly (so the main file path can be `app.py`), see the README in the repo root for instructions to re-init and push from `lr_crispdm_streamlit` as the repository root.
+
 # CRISP-DM Linear Regression Demo
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io)
