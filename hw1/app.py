@@ -152,4 +152,3 @@ with col_sidebar:
     st.write("- Use presets to explore different regimes")
     st.write("- Increase noise to see how estimates degrade")
     st.write("- Reduce number of points to see variance in estimates")
-

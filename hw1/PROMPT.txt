@@ -1,0 +1,6 @@
+建立一個線性回歸模型，目標是從帶有雜訊的 1D 數據中估計係數 a 和 b，並展示 CRISP-DM 的每個步驟。
+
+要求：
+- 顯示 CRISP-DM 六個階段（Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, Deployment）。
+- 允許使用者修改真實參數 a、b、noise、資料點數 n、random seed、test_ratio。
+- 產生資料、訓練模型、顯示估計值與評估指標，提供下載 dataset 與 model 的功能。
